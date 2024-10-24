@@ -37,7 +37,9 @@ function sumOfArr(arr) {
   // for of - gives us each item in the array
   for(let item of arr) {
     const strToNum = Number(item)
-    num += strToNum;
+    if(strToNum > 0) {
+      num += strToNum;
+    }
     // num = strToNum + num;
   }
 
