@@ -1,4 +1,4 @@
-// The function will take in any number of numbers from our CML and add all the numbers up together. We will not take negivate numbers
+// The function will take in any number of numbers from our CML and add all the numbers up together. We will not take negative numbers
 
 // to read our command line arguments
 
@@ -30,9 +30,37 @@
 // console.log(num)
 
 const args = process.argv;
-
-console.log(args.slice(2));
-
 const sliced = args.slice(2);
 
-console.log(sliced)
+function sumOfArr(arr) {
+  console.log(arr);
+
+  // for of - gives us each item in the array
+  for(let item of arr) {
+    console.log(item)
+  }
+
+
+  
+  // for in - gives us each position in the array
+  // for(let item in arr) {
+  //   console.log(item);
+  // }
+  // c style for
+  // for(let i = 0; i < 100; i++) {
+  //   console.log(i);
+  // }
+
+}
+
+sumOfArr(sliced)
+
+// falsey values are values that will always return false in a check
+// false
+// undefined - is a false value that is GIVEN to you
+// null - is a false value that you MAKE
+// 0
+// ""
+// []
+// {}
+// NaN
