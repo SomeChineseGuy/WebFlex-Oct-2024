@@ -34,3 +34,5 @@ const args = process.argv;
 console.log(args.slice(2));
 
 const sliced = args.slice(2);
+
+console.log(sliced)
