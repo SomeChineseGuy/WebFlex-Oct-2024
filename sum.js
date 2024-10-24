@@ -33,15 +33,18 @@ const args = process.argv;
 const sliced = args.slice(2);
 
 function sumOfArr(arr) {
-  console.log(arr);
-
+  let num = 0;
   // for of - gives us each item in the array
   for(let item of arr) {
-    console.log(item)
+    const strToNum = Number(item)
+    num += strToNum;
+    // num = strToNum + num;
   }
 
+  return num;
 
-  
+
+
   // for in - gives us each position in the array
   // for(let item in arr) {
   //   console.log(item);
@@ -53,8 +56,8 @@ function sumOfArr(arr) {
 
 }
 
-sumOfArr(sliced)
 
+console.log(sumOfArr(sliced));
 // falsey values are values that will always return false in a check
 // false
 // undefined - is a false value that is GIVEN to you
