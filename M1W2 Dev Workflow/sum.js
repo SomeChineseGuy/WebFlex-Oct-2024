@@ -69,3 +69,7 @@ console.log(sumOfArr(sliced));
 // []
 // {}
 // NaN
+console.log();
+const somethingElse = (para) => {
+  
+}
