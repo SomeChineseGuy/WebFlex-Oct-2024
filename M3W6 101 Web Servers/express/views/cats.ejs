@@ -1,0 +1,14 @@
+<!-- What is EJS, EJS HTML that can also Run JS -->
+
+<h1>Cats!!! 🙀</h1>
+<p>Do you like cats?</p>
+<p>I like cats a lot!</p>
+<h2>More Cats!</h2>
+<!-- <img src="<%= catsDatabase["1"] %>" alt="">
+<img src="<%= catsDatabase["2"] %>" alt="">
+<img src="<%= catsDatabase["3"] %>" alt="">
+ -->
+
+<% for(let catImage in catsDatabase) { %>
+  <img src="<%= catsDatabase[catImage] %>" alt="">
+<% }%>
