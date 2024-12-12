@@ -1,0 +1,66 @@
+h1 {
+
+}
+
+.title {
+  font-size: 100px;
+  color: green;
+  background-color: red;
+}
+
+/* Box Model */
+
+.box {
+  padding: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-image {
+  width: 400px;
+  padding: 40px 40px 40px 40px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.button { 
+  background-color: #0068ec;
+  display: inline-block;
+  color: white;
+  padding-left:18px ;
+  padding-right:18px ;
+  padding-top: 9px ;
+  padding-bottom: 9px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.button-two {
+  border: 1px solid #0068ec;
+  display: inline-block;
+  color: #0068ec;
+  padding-left:18px ;
+  padding-right:18px ;
+  padding-top: 9px ;
+  padding-bottom: 9px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* flexbox */
+.flexbox {
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.heading { 
+  background-color: red;
+}
