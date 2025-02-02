@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="sans-serif" style="margin: 0; padding: 0;">
+	<head>
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+		<title>Home</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script>
+			$(() => {
+				$.get('/api/pets/all').then(({data}) => {
+					for(let item of data) {
+						console.log(item)
+						$('.results').append(`
+						<p> name -  ${item.name}</p>
+						<p> age -  ${item.age}</p>
+						<p> sex -  ${item.sex}</p>
+						`)
+					}
+				})
+			});
+
+		</script>
+	</head>
