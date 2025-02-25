@@ -1,0 +1,23 @@
+.cards-container {
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 400px;
+  text-align: left;
+}
+
+.cards-title {
+  font-size: 32px;
+}
+
+.cards-content {
+  font-size: 24px;
+}
+
+.active {
+  background-color: aqua;
+}
+
+img {
+  width: 100px;
+}
